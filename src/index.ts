@@ -5,7 +5,7 @@ import mongoose from 'mongoose'
 import diaryRouter from './routes/courses'
 
 // init mongoose
-const uri = `mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@cluster0.np9h5zk.mongodb.net/${process.env.MONGO_DATABASE}?retryWrites=true&w=majority`
+const uri = process.env.MONGO_URL
 mongoose
   .connect(uri)
   .then(() => {
@@ -26,11 +26,9 @@ app.get('/ping', (_, res) => {
   res.send('pong!!')
 })
 
-
-app.get("/", (_req, res) => {
-  res.json({ message: "ok" });
-});
-
+app.get('/', (_req, res) => {
+  res.json({ message: 'ok' })
+})
 
 app.listen(PORT, () => {
   console.log(`Server running in port http://localhost:${PORT}`)
