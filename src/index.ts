@@ -2,10 +2,11 @@ import dotenv from 'dotenv'
 dotenv.config()
 import express from 'express'
 import mongoose from 'mongoose'
+import { insertMock } from './mocks/courses'
 import diaryRouter from './routes/courses'
 
 // init mongoose
-const uri = process.env.MONGO_URL
+const uri = process.env.MONGO_URL || ''
 mongoose
   .connect(uri)
   .then(() => {
@@ -32,6 +33,11 @@ app.get('/', (_req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running in port http://localhost:${PORT}`)
+})
+
+app.get('/migrate', (_req, res) => {
+  insertMock()
+  res.send('Proceso finalizado')
 })
 
 app.use('/courses', diaryRouter)
