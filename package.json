@@ -1,0 +1,41 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev src/index.ts",
+    "start": "node build/index.js",
+    "lint": "ts-standard",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "ts-node-dev": "^2.0.0",
+    "ts-standard": "^12.0.1",
+    "typescript": "4.9.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "4.18.2",
+    "mongoose": "^6.7.4"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends": [
+      "./node_modules/ts-standard/eslintrc.json"
+    ],
+    "rules": {
+      "strict-boolean-expressions": [
+        true,
+        "allow-undefined-union"
+      ]
+    }
+  }
+}
