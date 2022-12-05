@@ -26,6 +26,12 @@ app.get('/ping', (_, res) => {
   res.send('pong!!')
 })
 
+
+app.get("/", (_req, res) => {
+  res.json({ message: "ok" });
+});
+
+
 app.listen(PORT, () => {
   console.log(`Server running in port http://localhost:${PORT}`)
 })
