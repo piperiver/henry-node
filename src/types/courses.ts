@@ -7,6 +7,7 @@ export interface Comment {
 export interface Author {
   name: string
   profession: string
+  image: string
 }
 export interface Lesson {
   seconds: number
@@ -31,6 +32,7 @@ export interface Course {
   video: string
   author: Author
   lessons: Lesson[]
+  cover: string
 }
 
 export type Filters = Partial<Pick<Course, 'title' | 'completed' | 'language'>>

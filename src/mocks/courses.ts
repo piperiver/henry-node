@@ -3,7 +3,10 @@ import { Course, Levels } from '../types/courses'
 
 const mockCourses: Course[] = [
   {
+    cover: 'https://miro.medium.com/max/1000/1*htbUdWgFQ3a94PMEvBr_hQ.png',
     author: {
+      image:
+        'https://yt3.ggpht.com/ytc/AMLnZu8Yppf2pEb1pwvh752YHW1z13KvO2gaPVBm-Cdztg=s900-c-k-c0x00ffffff-no-rj',
       name: 'Bluuweb',
       profession: 'Software Developer',
     },
@@ -45,9 +48,12 @@ const mockCourses: Course[] = [
     video: 'https://www.youtube.com/embed/AOpcZdYeUAs',
   },
   {
+    cover: 'https://reactjs.org/logo-og.png',
     author: {
       name: 'MiduDev',
       profession: 'Software Developer',
+      image:
+        'https://yt3.ggpht.com/ytc/AMLnZu8-BEDzQASfWOruugA1Uo5N_o57y2PYBfNgYjOatQ=s900-c-k-c0x00ffffff-no-rj',
     },
     comments: [
       {

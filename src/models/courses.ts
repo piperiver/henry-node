@@ -3,6 +3,7 @@ import { Course } from '../types/courses'
 const { Schema } = mongoose
 
 const courseSchema = new Schema<Course>({
+  cover: String,
   title: String,
   description: String,
   comments: [{ body: String, date: String, star: Number }],
@@ -13,6 +14,7 @@ const courseSchema = new Schema<Course>({
   author: {
     name: String,
     profession: String,
+    image: String,
   },
   lessons: [{ time: Number, title: String, description: String }],
 })
