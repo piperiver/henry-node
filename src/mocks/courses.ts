@@ -44,7 +44,7 @@ const mockCourses: Course[] = [
     ],
     level: Levels.intermediate,
     title: 'Curso de Next js',
-    video: 'embed/AOpcZdYeUAs',
+    video: 'AOpcZdYeUAs',
   },
   {
     cover: 'https://reactjs.org/logo-og.png',
@@ -57,7 +57,7 @@ const mockCourses: Course[] = [
       {
         body: 'Excelent!!',
         date: '01-12-2022 13:00',
-        star: 5,
+        star: 3,
       },
       {
         body: 'Good Course',
