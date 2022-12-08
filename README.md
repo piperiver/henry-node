@@ -29,7 +29,7 @@ Install henry-node with npm
 - ts-standard
 
 **For App Funcionality**
-
+- node js
 - express
 - mongoose
 - cors
