@@ -5,8 +5,7 @@ const mockCourses: Course[] = [
   {
     cover: 'https://miro.medium.com/max/1000/1*htbUdWgFQ3a94PMEvBr_hQ.png',
     author: {
-      image:
-        'https://yt3.ggpht.com/ytc/AMLnZu8Yppf2pEb1pwvh752YHW1z13KvO2gaPVBm-Cdztg=s900-c-k-c0x00ffffff-no-rj',
+      image: 'https://pbs.twimg.com/profile_images/769659569161330693/V9MtZUEO_400x400.jpg',
       name: 'Bluuweb',
       profession: 'Software Developer',
     },
@@ -45,15 +44,14 @@ const mockCourses: Course[] = [
     ],
     level: Levels.intermediate,
     title: 'Curso de Next js',
-    video: 'https://www.youtube.com/embed/AOpcZdYeUAs',
+    video: 'embed/AOpcZdYeUAs',
   },
   {
     cover: 'https://reactjs.org/logo-og.png',
     author: {
       name: 'MiduDev',
       profession: 'Software Developer',
-      image:
-        'https://yt3.ggpht.com/ytc/AMLnZu8-BEDzQASfWOruugA1Uo5N_o57y2PYBfNgYjOatQ=s900-c-k-c0x00ffffff-no-rj',
+      image: 'https://pbs.twimg.com/profile_images/1600566073719300096/LgB5qDyI_400x400.jpg',
     },
     comments: [
       {
@@ -88,7 +86,7 @@ const mockCourses: Course[] = [
     ],
     level: Levels.beginner,
     title: 'Aprende React desde 0',
-    video: 'https://www.youtube.com/embed/T_j60n1zgu0',
+    video: 'T_j60n1zgu0',
   },
 ]
 
